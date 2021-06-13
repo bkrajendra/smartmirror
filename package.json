@@ -2,8 +2,29 @@
   "name": "smartmirror",
   "version": "1.0.0",
   "description": "Smart Mirror with smart device control",
+  "build": {
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "bkrajendra",
+        "repo": "smartmirror"
+      }
+    ],
+    "appId": "in.iocare.smartmirror",
+    "mac": {
+      "category": "in.iocare.smartmirror"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  },
   "main": "index.js",
   "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder build",
+    "packall": "electron-builder -wl",
+    "publish": "electron-builder build --win -p always",
+    "dist": "electron-builder",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,5 +45,15 @@
   "bugs": {
     "url": "https://github.com/bkrajendra/smartmirror/issues"
   },
-  "homepage": "https://github.com/bkrajendra/smartmirror#readme"
+  "homepage": "https://github.com/bkrajendra/smartmirror#readme",
+  "devDependencies": {
+    "electron": "^13.1.2",
+    "electron-builder": "^22.11.7"
+  },
+  "dependencies": {
+    "electron-store": "^8.0.0",
+    "electron-updater": "^4.3.9",
+    "jquery": "^3.6.0",
+    "moment": "^2.29.1"
+  }
 }
