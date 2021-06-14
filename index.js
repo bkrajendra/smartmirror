@@ -11,7 +11,6 @@ var ipc = require("electron").ipcMain;
 const { autoUpdater } = require("electron-updater");
 const path = require("path");
 
-
 let store = null;
 let mainWindow = null;
 let tray = null;
@@ -72,20 +71,34 @@ function createWindow() {
   autoUpdater.checkForUpdatesAndNotify();
 
   let win = new BrowserWindow({
-    width: 400,
+    width: 800,
     height: 600,
     autoHideMenuBar: true,
     frame: false,
     resizable: false,
     center: true,
+    kiosk: true,
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
+      preload: path.join(__dirname, "preload.js"),
     },
     icon: path.join(__dirname, "icon.png"),
   });
 
   win.loadFile("index.html");
+  win.webContents.on("before-input-event", (event, input) => {
+    if (input.control && input.key.toLowerCase() === "i") {
+      console.log("Pressed Control+I");
+      //event.preventDefault();
+      //showAbout();
+    }
+    if (input.control && input.key.toLowerCase() === "q") {
+      console.log("Pressed Control+Q");
+      event.preventDefault();
+      app.quit();
+    }
+  });
   win.on("closed", function () {
     mainWindow = null;
   });
@@ -141,7 +154,6 @@ app.whenReady().then(() => {
     }
   });
   app.setAppUserModelId("in.iocare.smartmirror");
-
 });
 
 app.setLoginItemSettings({
