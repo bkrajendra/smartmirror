@@ -1,3 +1,5 @@
+intervalID = setInterval(getWeather, 6000);
+
 function getWeather() {
   console.log("in weather.");
   //$(".wrapper").css("margin-top", $(window).height() / 5);
