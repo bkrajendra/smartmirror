@@ -25,8 +25,8 @@
       <div class="row">
         <div class="col-md">
           <div class="card">
+            <div class="card-header">SmartMirror</div>
             <div class="card-body">
-              <h5 class="card-title">SmartMirror</h5>
               <p class="card-text">
                 We are using Node.js <span id="node-version"></span>, Chromium
                 <span id="chrome-version"></span>, and Electron
@@ -35,6 +35,30 @@
               <!-- <button type="button" class="btn btn-primary">Button</button> -->
             </div>
           </div>
+          <div class="card my-2">
+            <div class="card-header">Sensor Data</div>
+            <div class="card-body">
+              
+              <p class="card-text">
+                <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center text-white">
+                    Humidity
+                    <span id="bedroom" class="badge bg-primary rounded-pill">65%</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center text-white">
+                    Temperature
+                    <span id="kitchen" class="badge bg-success rounded-pill">31 &deg; C</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center text-white">
+                    Dewpoint
+                    <span id="hall" class="badge bg-danger rounded-pill">74</span>
+                  </li>
+                </ul>
+              </p>
+              <!-- <button type="button" class="btn btn-primary">Button</button> -->
+            </div>
+          </div>
+
         </div>
         <div class="col-md">
           <div class="card">
