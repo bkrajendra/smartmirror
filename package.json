@@ -51,6 +51,7 @@
     "electron-builder": "^22.11.7"
   },
   "dependencies": {
+    "artyom.js": "^1.0.6",
     "electron-store": "^8.0.0",
     "electron-updater": "^4.3.9",
     "jquery": "^3.6.0",

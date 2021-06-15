@@ -8,48 +8,48 @@ var moment = require("moment");
 
 const fs = require("fs");
 var { shell } = require("electron");
-
+var intervalID;
 $("#load-1").hide();
+$("#load-2").hide();
 
 function getData() {
-  $("#load-1").show();
-  var pin = $("#pin").val();
-  $("#centers").html("");
+  $("#load-2").show();
+  //var pin = $("#pin").val();
+  //$("#centers").html("");
 
-  let t_date = moment().format("DD-MM-YYYY");
+  //let t_date = moment().format("DD-MM-YYYY");
   $.ajax({
-    url:
-      "https://cdn-api.co-vin.in/api/v2/appointment/sessions/calendarByPin?pincode=" +
-      pin +
-      "&date=" +
-      t_date,
+    url: "http://localhost:54321/dht",
   })
     .then(function (data) {
-      $("#load-1").hide();
-      // $.each(data.centers, function (index, item) {
-      //   var item_data = `<div class="card text-white bg-${
-      //     item.fee_type === "Free" ? "success" : "secondary"
-      //   } mb-2">
-      //           <div class="card-header">${item.name}</div>
+      console.log(data);
+      $("#load-2").hide();
+      $("#humidity").html(data.data.humidity);
+      $("#temp").html(data.data.temperature);
+      $("#dp").html(data.data.dew);
+    })
+    .fail(function (err) {
+      console.log(err);
+      $("#load-2").hide();
+    });
+}
 
-      //           <div class="card-body">
-      //           <h5 class="card-title">${item.center_id}</h5>
-      //           <p class="card-text">
-      //           ${item.address}<br>
-      //           ${item.pincode}
-      //           <small>${item.fee_type}</small>
-      //           <ul class="list-group" id="lg_${index}"></ul>
-      //           </p>
-      //           </div>
-      //         </div>`;
-      //   $("#centers").append(item_data);
-      //   $("#lg_" + index).html("");
-      // });
+function getDHTData() {
+  $("#load-1").show();
+
+  $.ajax({
+    url: "http://localhost:54321/dht",
+  })
+    .then(function (data) {
+      console.log(data.data.humidity);
+      $("#load-1").hide();
+      $("#humidity").html(data.data.humidity);
+      $("#temp").html(data.data.temperature);
+      $("#dp").html(data.data.dew);
     })
     .fail(function (err) {
       console.log(err);
       $("#load-1").hide();
     });
 }
-
-intervalID = setInterval(getData, 8000);
+intervalID = setInterval(getDHTData, 8000);
