@@ -29,7 +29,21 @@
             <div class="card-body">
               <p class="card-text">
                 Welcome to SmartMirror.
-                <button onclick="hi();" class="btn btn-secondary btn-sm">Hi</button>
+                <!-- <button onclick="hi();" class="btn btn-secondary btn-sm">Hi</button> -->
+
+                <section class="main-controls">
+                  <canvas class="visualizer" height="60px" width="120px"></canvas>
+                  <!-- <div id="buttons">
+                    <button class="record">Record</button>
+                    <button class="stop">Stop</button>
+                  </div> -->
+                </section>
+          
+                <section class="sound-clips">
+          
+          
+                </section>
+
               </p>
               <!-- <button type="button" class="btn btn-primary">Button</button> -->
             </div>
@@ -229,7 +243,7 @@
             Jarvis.say("Hello, how are you today "+ adminName +"?");
           }
       });
-
+      hi();
 
     });
     function hi(){

@@ -51,9 +51,9 @@ def api_dht():
 
 @app.route("/power")
 def api_power():
-    b = random.randint(75, 80)
-    k = random.randint(26, 31)
-    h = random.randint(26, 31) 
+    b = random.randint(4, 6)
+    k = random.randint(1, 3)
+    h = random.randint(2, 4)
 
     if b is not None and k is not None:
         obj =  { 'bed': b, 'kitchen': h, 'hall': k}
