@@ -236,7 +236,16 @@
       const elementSelector = document.getElementById('js-news');
       new RSSMarquee(feedUrl, elementSelector);
 
-      
+      Jarvis.on(['Good morning','Good afternoon']).then((i) => {
+    switch (i) {
+        case 0:
+            artyom.say("Good morning, how are you?");
+        break;
+        case 1:
+            artyom.say("Good afternoon, how are you?");
+        break;            
+    }
+});
       Jarvis.addCommands({
           indexes: ["Hello","Hi"],
           action: function(){
