@@ -1,6 +1,6 @@
 {
   "name": "smartmirror",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Smart Mirror with smart device control",
   "build": {
     "publish": [

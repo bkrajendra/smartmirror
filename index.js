@@ -35,10 +35,6 @@ if (!gotTheLock) {
   // app.on("ready", () => {});
 }
 
-ipc.handle("get-version", (event, arg) => {
-  return app.getVersion();
-});
-
 ipc.handle("get-store", (event, arg) => {
   console.log(arg);
   return store.get(arg);

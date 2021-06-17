@@ -43,12 +43,12 @@ function getDHTData() {
   $.ajax({
     url: "http://localhost:54321/dht",
   })
-    .then(function (data) {
-      console.log(data.data.humidity);
+    .then(function (response) {
+      console.log(response.data);
       $("#load-1").hide();
-      $("#humidity").html(data.data.humidity);
-      $("#temp").html(data.data.temperature);
-      $("#dp").html(data.data.dew);
+      $("#humidity").html(response.data.humidity);
+      $("#temp").html(response.data.temperature);
+      $("#dp").html(response.data.dew);
     })
     .fail(function (err) {
       console.log(err);
@@ -62,12 +62,12 @@ function getPowerData() {
   $.ajax({
     url: "http://localhost:54321/power",
   })
-    .then(function (data) {
-      console.log(data.data.humidity);
+    .then(function (response) {
+      console.log(response.data.humidity);
       $("#load-2").hide();
-      $("#bedroom").html(data.data.bed + "KWh");
-      $("#kitchen").html(data.data.kitchen + "KWh");
-      $("#hall").html(data.data.hall + "KWh");
+      $("#bedroom").html(response.data.bed + " KWh");
+      $("#kitchen").html(response.data.kitchen + " KWh");
+      $("#hall").html(response.data.hall + " KWh");
     })
     .fail(function (err) {
       console.log(err);

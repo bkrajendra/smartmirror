@@ -2,6 +2,7 @@
 
 from flask import Flask, render_template, redirect, request, current_app, jsonify
 app = Flask(__name__)
+
 import math
 import random
 from functools import wraps
@@ -35,6 +36,20 @@ def get_dew_point_c(t_air_c, rel_humidity):
     B = 237.7
     alpha = ((A * t_air_c) / (B + t_air_c)) + math.log(rel_humidity/100.0)
     return (B * alpha) / (A - alpha)
+
+@app.route("/")
+def handle_root():
+    return "Welcome to Smart Mirror!"
+
+@app.route("/details")
+def handle_details():
+
+    return "humidity is now 78%"
+
+@app.route("/kitchen")
+def kitchen():
+    # code to turn on kitchen
+    return "kitchen is on Now."
 
 @app.route("/dht")
 def api_dht():
