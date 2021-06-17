@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Transformer:CST1 T?
+L Transformer:CST1 T1
 U 1 1 60C9D442
 P 1600 3450
-F 0 "T?" V 1646 3406 50  0000 R CNN
+F 0 "T1" V 1646 3406 50  0000 R CNN
 F 1 "CST1" V 1555 3406 50  0000 R CNN
 F 2 "Transformer_SMD:Transformer_Coilcraft_CST1" H 1600 3450 50  0001 C CNN
 F 3 "https://www.coilcraft.com/pdfs/cst.pdf" H 1600 3450 50  0001 C CNN
@@ -25,10 +25,10 @@ F 3 "https://www.coilcraft.com/pdfs/cst.pdf" H 1600 3450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R1
 U 1 1 60CA3B85
 P 1950 3450
-F 0 "R?" H 2020 3496 50  0000 L CNN
+F 0 "R1" H 2020 3496 50  0000 L CNN
 F 1 "33" H 2020 3405 50  0000 L CNN
 F 2 "" V 1880 3450 50  0001 C CNN
 F 3 "~" H 1950 3450 50  0001 C CNN
@@ -36,10 +36,10 @@ F 3 "~" H 1950 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R2
 U 1 1 60CA5059
 P 2250 3450
-F 0 "R?" H 2320 3496 50  0000 L CNN
+F 0 "R2" H 2320 3496 50  0000 L CNN
 F 1 "10k" H 2320 3405 50  0000 L CNN
 F 2 "" V 2180 3450 50  0001 C CNN
 F 3 "~" H 2250 3450 50  0001 C CNN
@@ -47,10 +47,10 @@ F 3 "~" H 2250 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R3
 U 1 1 60CA5419
 P 2250 4100
-F 0 "R?" H 2320 4146 50  0000 L CNN
+F 0 "R3" H 2320 4146 50  0000 L CNN
 F 1 "10k" H 2320 4055 50  0000 L CNN
 F 2 "" V 2180 4100 50  0001 C CNN
 F 3 "~" H 2250 4100 50  0001 C CNN
@@ -58,10 +58,10 @@ F 3 "~" H 2250 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C1
 U 1 1 60CA5A63
 P 1950 4100
-F 0 "C?" H 2065 4146 50  0000 L CNN
+F 0 "C1" H 2065 4146 50  0000 L CNN
 F 1 "10uf" H 2065 4055 50  0000 L CNN
 F 2 "" H 1988 3950 50  0001 C CNN
 F 3 "~" H 1950 4100 50  0001 C CNN
@@ -85,10 +85,10 @@ Wire Wire Line
 	1950 3950 2250 3950
 Connection ~ 2250 3950
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR02
 U 1 1 60CA7466
 P 2250 2450
-F 0 "#PWR?" H 2250 2300 50  0001 C CNN
+F 0 "#PWR02" H 2250 2300 50  0001 C CNN
 F 1 "+5V" H 2265 2623 50  0000 C CNN
 F 2 "" H 2250 2450 50  0001 C CNN
 F 3 "" H 2250 2450 50  0001 C CNN
@@ -96,10 +96,10 @@ F 3 "" H 2250 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR01
 U 1 1 60CA7D2B
 P 2100 4450
-F 0 "#PWR?" H 2100 4200 50  0001 C CNN
+F 0 "#PWR01" H 2100 4200 50  0001 C CNN
 F 1 "GND" H 2105 4277 50  0000 C CNN
 F 2 "" H 2100 4450 50  0001 C CNN
 F 3 "" H 2100 4450 50  0001 C CNN
@@ -110,10 +110,10 @@ Connection ~ 2100 4450
 Wire Wire Line
 	2100 4450 2250 4450
 $Comp
-L Analog_ADC:ADS1115IDGS U?
+L Analog_ADC:ADS1115IDGS U1
 U 1 1 60CAEFC8
 P 3700 2500
-F 0 "U?" H 3700 3181 50  0000 C CNN
+F 0 "U1" H 3700 3181 50  0000 C CNN
 F 1 "ADS1115IDGS" H 3700 3090 50  0000 C CNN
 F 2 "Package_SO:TSSOP-10_3x3mm_P0.5mm" H 3700 2000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ads1113.pdf" H 3650 1600 50  0001 C CNN
@@ -121,10 +121,10 @@ F 3 "http://www.ti.com/lit/ds/symlink/ads1113.pdf" H 3650 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR03
 U 1 1 60CB04AB
 P 3700 3000
-F 0 "#PWR?" H 3700 2750 50  0001 C CNN
+F 0 "#PWR03" H 3700 2750 50  0001 C CNN
 F 1 "GND" H 3705 2827 50  0000 C CNN
 F 2 "" H 3700 3000 50  0001 C CNN
 F 3 "" H 3700 3000 50  0001 C CNN
@@ -144,10 +144,10 @@ SDA
 Text Label 6550 2950 0    50   ~ 0
 SCL
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR07
 U 1 1 60CB769B
 P 4750 2050
-F 0 "#PWR?" H 4750 1900 50  0001 C CNN
+F 0 "#PWR07" H 4750 1900 50  0001 C CNN
 F 1 "+5V" H 4765 2223 50  0000 C CNN
 F 2 "" H 4750 2050 50  0001 C CNN
 F 3 "" H 4750 2050 50  0001 C CNN
@@ -157,10 +157,10 @@ $EndComp
 Wire Wire Line
 	4750 2150 4750 2050
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR09
 U 1 1 60CB95CB
 P 6300 2050
-F 0 "#PWR?" H 6300 1900 50  0001 C CNN
+F 0 "#PWR09" H 6300 1900 50  0001 C CNN
 F 1 "+3.3V" H 6315 2223 50  0000 C CNN
 F 2 "" H 6300 2050 50  0001 C CNN
 F 3 "" H 6300 2050 50  0001 C CNN
@@ -168,10 +168,10 @@ F 3 "" H 6300 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR06
 U 1 1 60CB9EE8
 P 4200 1900
-F 0 "#PWR?" H 4200 1750 50  0001 C CNN
+F 0 "#PWR06" H 4200 1750 50  0001 C CNN
 F 1 "+3.3V" H 4215 2073 50  0000 C CNN
 F 2 "" H 4200 1900 50  0001 C CNN
 F 3 "" H 4200 1900 50  0001 C CNN
@@ -181,10 +181,10 @@ $EndComp
 Wire Wire Line
 	6300 2150 6300 2050
 $Comp
-L Sensor:DHT11 U?
+L Sensor:DHT11 U2
 U 1 1 60CBB416
 P 3750 4250
-F 0 "U?" H 3506 4296 50  0000 R CNN
+F 0 "U2" H 3506 4296 50  0000 R CNN
 F 1 "DHT11" H 3506 4205 50  0000 R CNN
 F 2 "Sensor:Aosong_DHT11_5.5x12.0_P2.54mm" H 3750 3850 50  0001 C CNN
 F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 3900 4500 50  0001 C CNN
@@ -192,10 +192,10 @@ F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 3900 4500 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR05
 U 1 1 60CBC3C6
 P 3750 4600
-F 0 "#PWR?" H 3750 4350 50  0001 C CNN
+F 0 "#PWR05" H 3750 4350 50  0001 C CNN
 F 1 "GND" H 3755 4427 50  0000 C CNN
 F 2 "" H 3750 4600 50  0001 C CNN
 F 3 "" H 3750 4600 50  0001 C CNN
@@ -207,10 +207,10 @@ Wire Wire Line
 Wire Wire Line
 	3700 2900 3700 3000
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR04
 U 1 1 60CBD2A9
 P 3750 3800
-F 0 "#PWR?" H 3750 3650 50  0001 C CNN
+F 0 "#PWR04" H 3750 3650 50  0001 C CNN
 F 1 "+3.3V" H 3765 3973 50  0000 C CNN
 F 2 "" H 3750 3800 50  0001 C CNN
 F 3 "" H 3750 3800 50  0001 C CNN
@@ -218,10 +218,10 @@ F 3 "" H 3750 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R4
 U 1 1 60CBE951
 P 4100 4000
-F 0 "R?" H 4170 4046 50  0000 L CNN
+F 0 "R4" H 4170 4046 50  0000 L CNN
 F 1 "4.7k" H 4170 3955 50  0000 L CNN
 F 2 "" V 4030 4000 50  0001 C CNN
 F 3 "~" H 4100 4000 50  0001 C CNN
@@ -247,10 +247,10 @@ Wire Wire Line
 Wire Wire Line
 	3750 3850 3750 3950
 $Comp
-L power:GND #PWR?
+L power:GND #PWR08
 U 1 1 60CC9B0E
 P 6100 4750
-F 0 "#PWR?" H 6100 4500 50  0001 C CNN
+F 0 "#PWR08" H 6100 4500 50  0001 C CNN
 F 1 "GND" H 6105 4577 50  0000 C CNN
 F 2 "" H 6100 4750 50  0001 C CNN
 F 3 "" H 6100 4750 50  0001 C CNN
@@ -258,10 +258,10 @@ F 3 "" H 6100 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Relay:DIPxx-1Axx-11x K?
+L Relay:DIPxx-1Axx-11x K1
 U 1 1 60CCB29F
 P 9350 2400
-F 0 "K?" H 9680 2446 50  0000 L CNN
+F 0 "K1" H 9680 2446 50  0000 L CNN
 F 1 "DIPxx-1Axx-11x" H 9680 2355 50  0000 L CNN
 F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 9700 2350 50  0001 L CNN
 F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 9350 2400 50  0001 C CNN
@@ -269,10 +269,10 @@ F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.
 	1    0    0    -1  
 $EndComp
 $Comp
-L Isolator:PC817 U?
+L Isolator:PC817 U3
 U 1 1 60CCE1B2
 P 8200 2300
-F 0 "U?" H 8200 2625 50  0000 C CNN
+F 0 "U3" H 8200 2625 50  0000 C CNN
 F 1 "PC817" H 8200 2534 50  0000 C CNN
 F 2 "Package_DIP:DIP-4_W7.62mm" H 8000 2100 50  0001 L CIN
 F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 8200 2300 50  0001 L CNN
@@ -280,10 +280,10 @@ F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 8200 2300 50  00
 	1    0    0    -1  
 $EndComp
 $Comp
-L Isolator:PC817 U?
+L Isolator:PC817 U4
 U 1 1 60CD04FD
 P 8200 3350
-F 0 "U?" H 8200 3675 50  0000 C CNN
+F 0 "U4" H 8200 3675 50  0000 C CNN
 F 1 "PC817" H 8200 3584 50  0000 C CNN
 F 2 "Package_DIP:DIP-4_W7.62mm" H 8000 3150 50  0001 L CIN
 F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 8200 3350 50  0001 L CNN
@@ -291,10 +291,10 @@ F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 8200 3350 50  00
 	1    0    0    -1  
 $EndComp
 $Comp
-L Isolator:PC817 U?
+L Isolator:PC817 U5
 U 1 1 60CD198F
 P 8200 4250
-F 0 "U?" H 8200 4575 50  0000 C CNN
+F 0 "U5" H 8200 4575 50  0000 C CNN
 F 1 "PC817" H 8200 4484 50  0000 C CNN
 F 2 "Package_DIP:DIP-4_W7.62mm" H 8000 4050 50  0001 L CIN
 F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 8200 4250 50  0001 L CNN
@@ -302,10 +302,10 @@ F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 8200 4250 50  00
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R5
 U 1 1 60CDBCED
 P 7650 2200
-F 0 "R?" V 7443 2200 50  0000 C CNN
+F 0 "R5" V 7443 2200 50  0000 C CNN
 F 1 "600" V 7534 2200 50  0000 C CNN
 F 2 "" V 7580 2200 50  0001 C CNN
 F 3 "~" H 7650 2200 50  0001 C CNN
@@ -313,10 +313,10 @@ F 3 "~" H 7650 2200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R6
 U 1 1 60CDCA8D
 P 7650 3250
-F 0 "R?" V 7443 3250 50  0000 C CNN
+F 0 "R6" V 7443 3250 50  0000 C CNN
 F 1 "600" V 7534 3250 50  0000 C CNN
 F 2 "" V 7580 3250 50  0001 C CNN
 F 3 "~" H 7650 3250 50  0001 C CNN
@@ -324,10 +324,10 @@ F 3 "~" H 7650 3250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R7
 U 1 1 60CDCED2
 P 7650 4150
-F 0 "R?" V 7443 4150 50  0000 C CNN
+F 0 "R7" V 7443 4150 50  0000 C CNN
 F 1 "600" V 7534 4150 50  0000 C CNN
 F 2 "" V 7580 4150 50  0001 C CNN
 F 3 "~" H 7650 4150 50  0001 C CNN
@@ -335,10 +335,10 @@ F 3 "~" H 7650 4150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR010
 U 1 1 60CE0011
 P 7850 2450
-F 0 "#PWR?" H 7850 2200 50  0001 C CNN
+F 0 "#PWR010" H 7850 2200 50  0001 C CNN
 F 1 "GND" H 7855 2277 50  0000 C CNN
 F 2 "" H 7850 2450 50  0001 C CNN
 F 3 "" H 7850 2450 50  0001 C CNN
@@ -346,10 +346,10 @@ F 3 "" H 7850 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR011
 U 1 1 60CE06CA
 P 7850 3550
-F 0 "#PWR?" H 7850 3300 50  0001 C CNN
+F 0 "#PWR011" H 7850 3300 50  0001 C CNN
 F 1 "GND" H 7855 3377 50  0000 C CNN
 F 2 "" H 7850 3550 50  0001 C CNN
 F 3 "" H 7850 3550 50  0001 C CNN
@@ -357,10 +357,10 @@ F 3 "" H 7850 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR012
 U 1 1 60CE09E9
 P 7850 4450
-F 0 "#PWR?" H 7850 4200 50  0001 C CNN
+F 0 "#PWR012" H 7850 4200 50  0001 C CNN
 F 1 "GND" H 7855 4277 50  0000 C CNN
 F 2 "" H 7850 4450 50  0001 C CNN
 F 3 "" H 7850 4450 50  0001 C CNN
@@ -368,10 +368,10 @@ F 3 "" H 7850 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR016
 U 1 1 60CE8C2C
 P 9300 2750
-F 0 "#PWR?" H 9300 2500 50  0001 C CNN
+F 0 "#PWR016" H 9300 2500 50  0001 C CNN
 F 1 "GND" H 9305 2577 50  0000 C CNN
 F 2 "" H 9300 2750 50  0001 C CNN
 F 3 "" H 9300 2750 50  0001 C CNN
@@ -379,10 +379,10 @@ F 3 "" H 9300 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR017
 U 1 1 60CEA0C9
 P 9300 3700
-F 0 "#PWR?" H 9300 3450 50  0001 C CNN
+F 0 "#PWR017" H 9300 3450 50  0001 C CNN
 F 1 "GND" H 9305 3527 50  0000 C CNN
 F 2 "" H 9300 3700 50  0001 C CNN
 F 3 "" H 9300 3700 50  0001 C CNN
@@ -390,10 +390,10 @@ F 3 "" H 9300 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR018
 U 1 1 60CEA577
 P 9300 4650
-F 0 "#PWR?" H 9300 4400 50  0001 C CNN
+F 0 "#PWR018" H 9300 4400 50  0001 C CNN
 F 1 "GND" H 9305 4477 50  0000 C CNN
 F 2 "" H 9300 4650 50  0001 C CNN
 F 3 "" H 9300 4650 50  0001 C CNN
@@ -413,10 +413,10 @@ Wire Wire Line
 Wire Wire Line
 	9300 2700 9300 2750
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR013
 U 1 1 60CEF22C
 P 8650 2050
-F 0 "#PWR?" H 8650 1900 50  0001 C CNN
+F 0 "#PWR013" H 8650 1900 50  0001 C CNN
 F 1 "+5V" H 8665 2223 50  0000 C CNN
 F 2 "" H 8650 2050 50  0001 C CNN
 F 3 "" H 8650 2050 50  0001 C CNN
@@ -424,10 +424,10 @@ F 3 "" H 8650 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR014
 U 1 1 60CEF90B
 P 8650 3050
-F 0 "#PWR?" H 8650 2900 50  0001 C CNN
+F 0 "#PWR014" H 8650 2900 50  0001 C CNN
 F 1 "+5V" H 8665 3223 50  0000 C CNN
 F 2 "" H 8650 3050 50  0001 C CNN
 F 3 "" H 8650 3050 50  0001 C CNN
@@ -435,10 +435,10 @@ F 3 "" H 8650 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR015
 U 1 1 60CEFD64
 P 8650 3950
-F 0 "#PWR?" H 8650 3800 50  0001 C CNN
+F 0 "#PWR015" H 8650 3800 50  0001 C CNN
 F 1 "+5V" H 8665 4123 50  0000 C CNN
 F 2 "" H 8650 3950 50  0001 C CNN
 F 3 "" H 8650 3950 50  0001 C CNN
@@ -533,10 +533,10 @@ Wire Wire Line
 	5300 4750 5400 4750
 Connection ~ 5400 4750
 $Comp
-L Connector:Raspberry_Pi_2_3 J?
+L Connector:Raspberry_Pi_2_3 J1
 U 1 1 60CA90B6
 P 5600 3450
-F 0 "J?" H 5600 4931 50  0000 C CNN
+F 0 "J1" H 5600 4931 50  0000 C CNN
 F 1 "Raspberry_Pi_2_3" H 5600 4840 50  0000 C CNN
 F 2 "" H 5600 3450 50  0001 C CNN
 F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 5600 3450 50  0001 C CNN
@@ -610,10 +610,10 @@ Wire Wire Line
 Wire Wire Line
 	7150 4150 7500 4150
 $Comp
-L Relay:DIPxx-1Axx-11x K?
+L Relay:DIPxx-1Axx-11x K3
 U 1 1 60CCD832
 P 9350 4300
-F 0 "K?" H 9680 4346 50  0000 L CNN
+F 0 "K3" H 9680 4346 50  0000 L CNN
 F 1 "DIPxx-1Axx-11x" H 9680 4255 50  0000 L CNN
 F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 9700 4250 50  0001 L CNN
 F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 9350 4300 50  0001 C CNN
@@ -636,10 +636,10 @@ Connection ~ 8650 3950
 Wire Wire Line
 	8650 3950 8650 3850
 $Comp
-L Relay:DIPxx-1Axx-11x K?
+L Relay:DIPxx-1Axx-11x K2
 U 1 1 60CCCFD7
 P 9350 3350
-F 0 "K?" H 9680 3396 50  0000 L CNN
+F 0 "K2" H 9680 3396 50  0000 L CNN
 F 1 "DIPxx-1Axx-11x" H 9680 3305 50  0000 L CNN
 F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 9700 3300 50  0001 L CNN
 F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 9350 3350 50  0001 C CNN
